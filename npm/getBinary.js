@@ -20,7 +20,7 @@ function getBinary() {
     const version = require('../package.json').version;
     const url = `${DOWNLOAD_PATH}/v${version}/wasm-grate-${platform}.tar.gz`;
     const name = 'wasm-grate';
-    return new Binary(url, { name });
+    return new Binary(name, url);
 }
 
 module.exports = getBinary;

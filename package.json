@@ -1,12 +1,11 @@
 {
   "name": "wasm-grate",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "Analyzes JS projects for potential WebAssembly migration points.",
   "bin": {
     "my-program": "npm/run.js"
   },
   "scripts": {
-    "preinstall": "node npm/scripts.js uninstall",
     "postinstall": "node npm/scripts.js install"
   },
   "files": [
