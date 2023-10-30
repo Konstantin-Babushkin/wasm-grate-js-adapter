@@ -1,20 +1,19 @@
 {
   "name": "wasm-grate",
-  "version": "0.1.14",
+  "version": "0.1.16",
   "description": "Analyzes JS projects for potential WebAssembly migration points.",
-  "main": "index.js",
   "bin": {
-    "my-program": "./npm/run.js"
+    "my-program": "npm/run.js"
   },
   "scripts": {
-    "postinstall": "node ./npm/install.js",
-    "preinstall": "node ./npm/uninstall.js"
+    "preinstall": "node npm/scripts.js uninstall",
+    "postinstall": "node npm/scripts.js install"
   },
   "files": [
     "npm/**/*"
   ],
   "keywords": ["wasm", "js", "performance inspection", "wasm integration"],
-  "author": "Konstantin Babushkin (constant.babushkin@gmail.com)",
+  "author": "Konstantin Babushkin <constant.babushkin@gmail.com>",
   "license": "ISC",
   "repository": "https://github.com/Konstantin-Babushkin/wasm-grate.git",
   "private": false,
